@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  ul
+    each val in result
+      li= val.Name
+    
+  a(href="/") Back

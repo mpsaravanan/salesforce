@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  div
+  form(action='/createcontact',method='post')
+    div(data-role='fieldcontain')
+      label(for='name') Name
+        input(id='name',type='text',value='',placeholder='Enter Contact Name',name='name')
+        input(type='submit',value='Create',data-transition='fade', data-theme='c')
+  a(href="/") Back
